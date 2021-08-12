@@ -21,3 +21,4 @@ let filename = `${pad(now.getFullYear(), 4)}-${pad(now.getMonth() + 1, 2)}-${pad
 
 fs.appendFileSync('data/' + filename, `now is ${now.toString()}\r\n`, { encoding: 'utf-8' });
 
+
