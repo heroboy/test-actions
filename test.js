@@ -17,8 +17,8 @@ function pad(s, len)
 	return s;
 }
 let now = new Date();
-let filename = `${pad(now.getFullYear(), 4)}-${pad(now.getMonth() + 1, 2)}-${pad(now.getDate(), 2)}.txt`;
-
+//let filename = `${pad(now.getFullYear(), 4)}-${pad(now.getMonth() + 1, 2)}-${pad(now.getDate(), 2)}.txt`;
+let filename = 'tickets.txt';
 fs.appendFileSync('data/' + filename, `now is ${now.toString()}\r\n`, { encoding: 'utf-8' });
 
 
